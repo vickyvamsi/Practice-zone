@@ -1,0 +1,29 @@
+public class Test
+{
+	private int telugu=90;
+    private int english=85;
+	private int hindi=70;
+	private int mathes=80;
+	private int science =90;
+    private int social=80;
+
+	public static void main(String []args)
+	{
+		Test test= new Test();
+		int totalMarks= test.studentTotslMarks();
+		System.out.println("Student Total Marks :"+totalMarks);
+		double per=test.studentpercentage ();
+		System.out.println("student percentage :"+per);
+
+          }
+	public int studentTotalMarks()
+	{
+		int totalMarks= telugu+english+hindi+mathes+science+social;
+		retuen totalMarks ;
+	}
+	public double student percentage()
+	{
+		double percentage = totalMarks/6;
+		return percentage;
+	}
+}
